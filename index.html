@@ -113,7 +113,9 @@
 
         .menu-grid {
             display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
+            grid-template-columns: minmax(0, 1fr);
+            max-width: 600px;
+            margin: 0 auto;
             gap: 18px;
         }
 
@@ -134,7 +136,7 @@
         .menu-card img {
             display: block;
             width: 100%;
-            aspect-ratio: 9 / 14;
+            height: auto;
             object-fit: cover;
             background: var(--paper);
         }
@@ -200,7 +202,6 @@
                 justify-content: flex-start;
             }
 
-            .menu-grid,
             .info {
                 grid-template-columns: 1fr;
             }
@@ -241,37 +242,16 @@
                 <a class="btn btn-primary" href="https://wa.me/21650883282" target="_blank" rel="noopener noreferrer">WhatsApp</a>
                 <a class="btn" href="https://www.instagram.com/delicious_by_takwa?igsh=NW03b3I1a2Rhd3Vo" target="_blank" rel="noopener noreferrer">Instagram</a>
                 <a class="btn" href="https://www.facebook.com/share/1CzZLF6UMU/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Facebook</a>
-                <a class="btn" href="https://www.tiktok.com/@takwabanes?_r=1&amp;_t=ZS-97LuveANegU" target="_blank" rel="noopener noreferrer">TikTok</a>
-                <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=35.409000,11.006306" target="_blank" rel="noopener noreferrer">Localisation</a>
+                <a class="btn" href="https://www.tiktok.com/@takwabanes?_r=1&_t=ZS-97LuveANegU" target="_blank" rel="noopener noreferrer">TikTok</a>
+                <a class="btn" href="https://www.google.com/maps/search/?api=1&query=35.409000,11.006306" target="_blank" rel="noopener noreferrer">Localisation</a>
             </nav>
         </section>
 
         <section class="menu-grid" aria-label="Menus Delicious by Takwa">
             <article class="menu-card">
-                <a href="assets/menu-fruit-sec.jpeg" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/menu-fruit-sec.jpeg" alt="Menu fruit sec Delicious by Takwa">
-                    <div class="menu-caption">Fruit sec <span>Voir</span></div>
-                </a>
-            </article>
-
-            <article class="menu-card">
-                <a href="assets/menu-fruits-frais.jpeg" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/menu-fruits-frais.jpeg" alt="Menu fruits frais Delicious by Takwa">
-                    <div class="menu-caption">Fruits frais <span>Voir</span></div>
-                </a>
-            </article>
-
-            <article class="menu-card">
-                <a href="assets/menu-fruit-sec-original.jpeg" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/menu-fruit-sec-original.jpeg" alt="Ancien menu fruit sec Delicious by Takwa">
-                    <div class="menu-caption">Fruit sec original <span>Voir</span></div>
-                </a>
-            </article>
-
-            <article class="menu-card">
-                <a href="assets/menu-fruits-frais-original.jpeg" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/menu-fruits-frais-original.jpeg" alt="Ancien menu fruits frais Delicious by Takwa">
-                    <div class="menu-caption">Fruits frais original <span>Voir</span></div>
+                <a href="assets/menu-jus.jpeg" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/menu-jus.jpeg" alt="Menu Jus - Delicious by Takwa">
+                    <div class="menu-caption">Menu Jus <span>Voir</span></div>
                 </a>
             </article>
         </section>
@@ -282,7 +262,7 @@
             <div class="info-item"><small>Adresse</small>Ksour Essef, Mahdia</div>
         </section>
 
-        <footer class="footer">&copy; 2026 Delicious by Takwa. Tous droits réservés.</footer>
+        <footer class="footer">© 2026 Delicious by Takwa. Tous droits réservés.</footer>
     </main>
 </body>
 </html>
