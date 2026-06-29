@@ -13,13 +13,13 @@
         }
 
         :root {
-            --green: #052f20;
-            --deep-green: #011e15;
+            --green: #03291c;
+            --deep-green: #011711;
             --cream: #fff7e9;
-            --gold: #c79435;
-            --gold-soft: #f0ca73;
-            --ink: #143024;
-            --shadow: 0 24px 70px rgba(1, 19, 13, 0.35);
+            --gold: #c79534;
+            --gold-soft: #f6d488;
+            --ink: #0c2b20;
+            --shadow: 0 24px 70px rgba(1, 19, 13, 0.34);
         }
 
         body {
@@ -27,10 +27,10 @@
             font-family: "Segoe UI", Arial, sans-serif;
             color: var(--cream);
             background:
-                radial-gradient(circle at 15% 8%, rgba(240, 202, 115, 0.2), transparent 24%),
-                radial-gradient(circle at 85% 15%, rgba(255, 247, 233, 0.14), transparent 26%),
-                linear-gradient(145deg, var(--deep-green), var(--green) 48%, #02150f);
-            padding: clamp(14px, 3vw, 34px);
+                radial-gradient(circle at 18% 8%, rgba(246, 212, 136, 0.22), transparent 25%),
+                radial-gradient(circle at 82% 14%, rgba(255, 247, 233, 0.16), transparent 28%),
+                linear-gradient(145deg, var(--deep-green), var(--green) 48%, #02130e);
+            padding: clamp(10px, 3vw, 34px);
         }
 
         .page {
@@ -38,14 +38,13 @@
             margin: 0 auto;
         }
 
-        .poster-shell {
-            position: relative;
-            padding: clamp(8px, 1.5vw, 14px);
-            border: 1px solid rgba(240, 202, 115, 0.65);
+        .poster-frame {
+            padding: clamp(6px, 1.4vw, 14px);
+            border: 1px solid rgba(246, 212, 136, 0.72);
             border-radius: 8px;
             background:
-                linear-gradient(135deg, rgba(255, 247, 233, 0.22), rgba(199, 148, 53, 0.08)),
-                rgba(1, 30, 21, 0.86);
+                linear-gradient(135deg, rgba(255, 247, 233, 0.24), rgba(199, 149, 52, 0.1)),
+                rgba(1, 23, 17, 0.86);
             box-shadow: var(--shadow);
         }
 
@@ -71,10 +70,10 @@
             justify-content: center;
             min-height: 44px;
             padding: 11px 16px;
-            border: 1px solid rgba(240, 202, 115, 0.78);
+            border: 1px solid rgba(246, 212, 136, 0.78);
             border-radius: 8px;
             color: var(--cream);
-            background: rgba(1, 30, 21, 0.76);
+            background: rgba(1, 23, 17, 0.76);
             font-size: 14px;
             font-weight: 800;
             text-decoration: none;
@@ -92,7 +91,7 @@
 
         .btn-primary {
             color: var(--ink);
-            background: linear-gradient(180deg, #ffe7a3, var(--gold));
+            background: linear-gradient(180deg, #ffe9aa, var(--gold));
         }
 
         .info {
@@ -105,7 +104,7 @@
         .info-item {
             min-height: 62px;
             padding: 12px;
-            border: 1px solid rgba(240, 202, 115, 0.45);
+            border: 1px solid rgba(246, 212, 136, 0.45);
             border-radius: 8px;
             background: rgba(255, 247, 233, 0.08);
             text-align: center;
@@ -133,9 +132,8 @@
                 padding: 10px;
             }
 
-            .actions,
-            .info {
-                grid-template-columns: 1fr;
+            .actions {
+                justify-content: stretch;
             }
 
             .btn {
@@ -145,7 +143,7 @@
             }
 
             .info {
-                display: grid;
+                grid-template-columns: 1fr;
             }
         }
 
@@ -158,7 +156,7 @@
 </head>
 <body>
     <main class="page" aria-label="Menu Delicious by Takwa">
-        <section class="poster-shell" aria-label="Affiche du menu">
+        <section class="poster-frame" aria-label="Affiche du menu">
             <img class="poster" src="assets/menu-takwa.png" alt="Menu Delicious by Takwa avec jus fruits secs: pistache, noisette, zgougou, caramel, et jus frais: citron, citron rozataa, citron menthe, fraise, fraise menthe, cocktail fruits de saison.">
         </section>
 
